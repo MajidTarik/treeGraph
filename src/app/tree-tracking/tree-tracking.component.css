@@ -1,0 +1,12 @@
+.tags {
+  display: flex; /* Display the tags in a row */
+  gap: 5px; /* Add some spacing between the tags */
+}
+
+.tag {
+  display: inline-block; /* Make the tags appear in a line */
+  padding: 5px 10px; /* Add padding for some visual space */
+  background-color: aquamarine; /* Set the background color for the tags */
+  border-radius: 5px; /* Add rounded corners to the tags */
+  font-size: 14px; /* Set the font size for the tags */
+}

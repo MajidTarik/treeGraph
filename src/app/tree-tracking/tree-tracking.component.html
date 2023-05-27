@@ -1,0 +1,33 @@
+<div style="width:auto; height:500px; position: relative;">
+  <div style="display: inline-block;">
+    <svg
+      (mousedown)="startPan($event)" (mouseup)="stopPan()" (mousemove)="panWithMouse($event)"
+      #GraphId
+      [attr.width]="dimGraphe['somWidth']" [attr.height]="dimGraphe['somHeight']"
+      id="GraphId"
+      style="border: #666666 groove medium; border-radius: 5px;"
+      [style.background-color]="configGraph.backgroundColor"
+    >
+    </svg>
+  </div>
+  <button
+    [style.background-color]="configGraph.zoomColor"
+    style="position: fixed; left: 10px; height: auto; width: 22px; border-radius: 50%; border: none"
+    (click)="zoomIn()"
+  >
+    <strong>-</strong>
+  </button>
+  <button
+    [style.background-color]="configGraph.zoomColor"
+    style="position: fixed; left: 40px; height: auto; width: 22px; border-radius: 50%; border: none"
+    (click)="zoomOut()"
+  >
+    <strong>+</strong>
+  </button>
+</div>
+
+<div style="height: 300px; width: 150px; margin: 5px; padding: 5px; border: 5px black solid">
+  <div > <h5>Dimension Article : Jeu de joints d'etanchéité culasse de cylindre pour voiture</h5> </div>
+  <div > <h5>N° Serie : 120002563 </h5> </div>
+</div>
+
